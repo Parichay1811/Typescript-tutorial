@@ -1,0 +1,47 @@
+Typescript is not a stand alone language, it is a superset of javascript. That means TS is jaavascript with super poewers. It adds features to JS that are not present in JS, but it can also use all the features of JS.
+
+Difference between JS and TS:
+
+| Feature         | JavaScript                                           | TypeScript                                      |
+| --------------- | ---------------------------------------------------- | ----------------------------------------------- |
+| Definition      | A scripting/programming language for web development | A superset of JavaScript developed by Microsoft |
+| Typing          | Dynamically typed                                    | Statically typed                                |
+| Compilation     | Runs directly in browser/node                        | Must be compiled to JavaScript                  |
+| Error Checking  | Errors mostly found at runtime                       | Errors caught during development/compile time   |
+| Syntax          | Simpler                                              | JavaScript + types/features                     |
+| Learning Curve  | Easier for beginners                                 | Slightly harder initially                       |
+| Tooling         | Good                                                 | Better IDE support and autocomplete             |
+| Scalability     | Harder for very large apps                           | Better for large-scale applications             |
+| File Extension  | `.js`                                                | `.ts`                                           |
+| Browser Support | Directly supported                                   | Converted to JS before running                  |
+
+
+
+Diagram of how TS works:
+
+Ts Code => lexer => Parser => AST => Binder => Type Checker => Emitter => JS Code
+
+
+First we get the Typescscript code.
+
+Then it is passed to the lexer where,  the code is broken down into tokens (tokens are the smallest units of a program). 
+
+Then the tokens are passed to the parser where, the tokens are analyzed and a tree structure is created called Abstract Syntax Tree (AST). The AST represents the structure of the code. 
+
+Then it goes to the binder where, the variables and functions are resolved and the scope is determined. The binder also checks for any syntax errors and reports them.
+
+Then it goes to the type checker where, the types of variables and expressions are checked against the expected types. If there are any type errors, they are reported.
+
+Finally, if there are no errors, the code generator takes the AST and generates JavaScript code that can be executed in a browser or Node.js environment. 
+
+
+
+Installation of TS:
+
+1. npm init -y
+2. npm install typescript --save-dev
+3. npx tsc --init
+This will create a tsconfig.json file in the root of your project. This file is used to configure the TypeScript compiler. You can specify the target JavaScript version, module system, and other options in this file.
+4. Create a file named index.ts and add some TypeScript code to it.
+5. To compile the TypeScript code to JavaScript, run the following command in the terminal: npx tsc
+This will compile the index.ts file and generate an index.js file in the same directory. You can then run the index.js file using Node.js or include it in an HTML file to run in a browser.
