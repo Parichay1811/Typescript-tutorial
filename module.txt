@@ -1,1 +1,6 @@
-Day1
+Day-1:
+
+1. What is TypeScript?
+2. Difference between JavaScript and TypeScript
+3. How TypeScript works (Diagram)
+4. Installation of TypeScript
