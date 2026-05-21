@@ -45,3 +45,38 @@ This will create a tsconfig.json file in the root of your project. This file is 
 4. Create a file named index.ts and add some TypeScript code to it.
 5. To compile the TypeScript code to JavaScript, run the following command in the terminal: npx tsc
 This will compile the index.ts file and generate an index.js file in the same directory. You can then run the index.js file using Node.js or include it in an HTML file to run in a browser.
+
+
+Type inference and type annotations:
+
+Type inference: TypeScript can automatically infer the type of a variable based on the value assigned to it. For example:
+```typescript
+let message = "Hello, TypeScript!"; // TypeScript infers that 'message' is of type string
+```
+
+
+Type annotations: You can explicitly specify the type of a variable using a colon (`:`) followed by the type. For example:
+```typescript
+let message: string = "Hello, TypeScript!";
+let age: number = 25;
+let isActive: boolean = true;
+```
+
+
+Union and any types:
+
+Union types allow a variable to hold more than one type. You can use the pipe (`|`) symbol to specify multiple types. For example:
+```typescript   
+let value: string | number;
+value = "Hello"; // valid
+value = 42; // valid
+value = true; // Error: Type 'boolean' is not assignable to type 'string | number'
+```
+The `any` type is a special type that can hold any value, and it effectively disables type checking for that variable. It is generally recommended to avoid using `any` unless absolutely necessary, as it can lead to runtime errors. For example:
+```typescript     
+let value: any;
+value = "Hello"; // valid
+value = 42; // valid
+value = true; // valid, but not recommended
+```
+TypeScript also provides other types such as `void`, `null`, `undefined`, `never`, and more, which can be used to further specify the types of variables and functions in your code.
