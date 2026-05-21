@@ -80,3 +80,18 @@ value = 42; // valid
 value = true; // valid, but not recommended
 ```
 TypeScript also provides other types such as `void`, `null`, `undefined`, `never`, and more, which can be used to further specify the types of variables and functions in your code.
+
+
+//Type Narrowing:
+
+Typpe narrowing means the typescript reduces the possible types of a variable into more specific types based on the conditions in our code.
+
+For example:
+```typescript
+function printLength(value: string | number) {
+  if (typeof value === "string") {
+    console.log("Length of string:", value.length); // TypeScript knows 'value' is a string here
+  } else {
+    console.log("Value is a number:", value); // TypeScript knows 'value' is a number here
+  }
+}`
