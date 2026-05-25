@@ -95,3 +95,37 @@ function printLength(value: string | number) {
     console.log("Value is a number:", value); // TypeScript knows 'value' is a number here
   }
 }`
+
+
+
+Type Assertion in TypeScript:
+
+Type Assertion tells TypeScript: “Trust me, I know the type of this value.”
+
+
+
+
+NEVER TYPE:
+
+Never represents a type that never occurs. It is used to indicate that a function never returns or that a variable can never have a value.
+
+Why does TypeScript need never?
+
+TypeScript uses never for:
+
+impossible states
+unreachable code
+exhaustive checking
+functions that never return
+advanced type filtering
+
+| Type    | Meaning                  |
+| ------- | ------------------------ |
+| `void`  | function returns nothing |
+| `never` | function never finishes  |
+
+| Type      | Meaning          |
+| --------- | ---------------- |
+| `any`     | anything allowed |
+| `unknown` | unknown value    |
+| `never`   | impossible value |
