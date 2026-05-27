@@ -129,3 +129,22 @@ advanced type filtering
 | `any`     | anything allowed |
 | `unknown` | unknown value    |
 | `never`   | impossible value |
+
+
+Day 5:
+Difference between interface and type alias:
+ type                      | interface                 |
+| ------------------------- | ------------------------- |
+| More flexible             | Mainly for object shapes  |
+| Can do unions             | Cannot directly do unions |
+| Used heavily in modern TS | Common in OOP-style code  |
+
+The Most Important Thing to Remember
+
+Type aliases are about:
+
+-Reusability
+-Readability
+-Safety
+-Scalability
+
