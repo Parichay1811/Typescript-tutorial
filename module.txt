@@ -5,11 +5,7 @@ Day-1:
 3. How TypeScript works (Diagram)
 4. Installation of TypeScript
 
-Duck Typing / Structural Typing
-Partial<T> Utility Type
-Required<T> Utility Type
-Pick<T> Utility Type
-Omit<T> Utility Type
+
 Functions Basics
 void Return Type
 Optional Parameters in Functions

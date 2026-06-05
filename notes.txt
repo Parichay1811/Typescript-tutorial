@@ -148,3 +148,36 @@ Type aliases are about:
 -Safety
 -Scalability
 
+
+Day 6:
+
+1. Duck Typing / Structural Typing
+
+What is it?
+
+-TypeScript does not care about the name of a type.
+-It only cares about the structure (properties and methods).
+-This is called Structural Typing (also known as Duck Typing).
+
+"If it looks like a duck and quacks like a duck, it's a duck."
+
+2. Partial<T> Utility Type
+Problem
+
+Suppose:
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+Normally:
+
+const user: User = {
+  name: "Parichay",
+};
+
+❌ Error
+
+Because all properties are required. As per the Duck typing.
