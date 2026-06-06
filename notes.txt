@@ -181,3 +181,24 @@ const user: User = {
 ❌ Error
 
 Because all properties are required. As per the Duck typing.
+
+
+Day 7:
+
+Interview Questions
+What is void in TypeScript?
+void indicates that a function does not return any value.
+
+What is an optional parameter?
+A parameter marked with ? that may or may not be provided when calling a function.
+
+Difference between number[] and readonly number[]?
+
+number[] → Can modify the array.
+readonly number[] → Cannot modify the array.
+
+How do you define an array of strings?
+const names: string[] = ["A", "B", "C"];
+
+How do you make a function parameter optional?
+function greet(name: string, city?: string) {}
