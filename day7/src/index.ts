@@ -60,7 +60,7 @@ const participent: string[] = [
 ]
 
  */
-/* 
+
 //Generic Syntax
 
 const scores: Array<number> = [90, 80, 70];
@@ -93,8 +93,8 @@ nums.pop();
 nums.map((num) => num * 2);
 
 
- */
 
+/* 
 // Readonly Arrays
 
 const names: readonly string[] = [
@@ -111,3 +111,5 @@ const numbers: ReadonlyArray<number> = [
   2,
   3
 ];
+
+ */
