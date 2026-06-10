@@ -202,3 +202,39 @@ const names: string[] = ["A", "B", "C"];
 
 How do you make a function parameter optional?
 function greet(name: string, city?: string) {}
+
+
+Day 8:
+Tuples:
+Tupels is a fixed length array where each element can have a different type. It is defined using square brackets [] and the types of the elements are specified in order.
+```typescript
+
+Enums:
+a special data type that allows us to define a set of named constants. It is defined using the enum keyword and can be used to represent a collection of related values.
+```typescript
+
+Constructor:
+A constructor is a special method that runs automatically when an object of a class is created.
+
+Access Modifiers (Public & Private)`
+Access modifiers control who can access properties and methods.
+
+
+Quick Interview Questions
+
+What is a Tuple?
+A fixed-length array where each position has a predefined type.
+
+What is an Enum?
+A way to define a collection of named constants.
+
+What is a Class?
+A blueprint for creating objects.
+
+What is a Constructor?
+A special method that automatically executes when an object is created.
+
+Difference between Public and Private?
+Public	                        Private
+Accessible everywhere           Accessible only inside class
+Default modifier	              Must be explicitly written

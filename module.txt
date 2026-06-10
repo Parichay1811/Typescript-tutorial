@@ -6,16 +6,8 @@ Day-1:
 4. Installation of TypeScript
 
 
-Functions Basics
-void Return Type
-Optional Parameters in Functions
-Arrays Basics
-Readonly Arrays
-Tuples
-Enums
-Classes Introduction
-Constructors
-"Access Modifiers (Public, Private)"
+
+
 Protected Modifier
 Getters and Setters
 Static Members
